@@ -1,0 +1,100 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    background-color: #3c675e ;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto; /* Centering the product-detail container */
+    background-color: white;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product-image {
+    flex: 1;
+}
+.product-image img {
+    max-width: 100%; /* Adjusted to fit the container properly */
+    border-radius: 5px;
+}
+.product-info {
+    flex: 1;
+}
+.product-info h1 {
+    color: #149279;
+}
+.product-info p {
+    line-height: 1.6;
+}
+.product-info .price {
+    color: #149279;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.product-info button {
+    background-color: #149279;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-info button:hover {
+    background-color: #056f5a;
+}
+.similar-products {
+    margin: 40px 0;
+}
+.similar-products h2 {
+    color: #149279;
+    margin-bottom: 20px;
+}
+.products-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(25% - 50px); /* Adjusted to fit the grid properly */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+.product img {
+    max-width: 100%; /* Adjusted to fit the container properly */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.product h3 {
+    color: #149279;
+    font-size: 1.2em;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

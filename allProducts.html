@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Listing Page</title>
+    <link rel="stylesheet" href="css/allProducts.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h1>Company Logo</h1>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="servicesListings.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="header">
+        <h1>Products Listing</h1>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+      </div>
+
+      <div class="products-listing">
+        <a href="product.html" class="product">
+          <img src="/images/product.png" alt="Product 1" />
+          <h3>Product 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+        <a href="product.html" class="product">
+          <img src="/images/product.png" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+        <a href="product.html" class="product">
+          <img src="/images/product.png" alt="Product 3" />
+          <h3>Product 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+        <a href="product.html" class="product">
+          <img src="/images/product.png" alt="Product 4" />
+          <h3>Product 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+      </div>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+      <div class="footer">
+        <p>Subscribe to our newsletter for the latest updates.</p>
+        <form action="#">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            style="padding: 10px; width: 200px; margin-bottom: 10px"
+          />
+          <button
+            type="submit"
+            style="
+              padding: 10px 20px;
+              background-color: #81b441;
+              border: none;
+              color: white;
+              cursor: pointer;
+              border-radius: 5px;
+            "
+          >
+            Subscribe
+          </button>
+        </form>
+        <p>
+          &copy; 2024 Your Company. All rights reserved. |
+          <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

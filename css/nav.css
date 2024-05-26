@@ -1,0 +1,40 @@
+/* Navbar styling */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important; 
+}
+.navbar {
+    background-color: #149279;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    min-height: 35px;
+    font-size: 15px;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-right li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar-right li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-right li a:hover {
+    color: #ecf0f1;
+  }
