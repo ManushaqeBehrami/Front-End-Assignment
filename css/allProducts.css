@@ -67,3 +67,27 @@ body {
     background-color: #81b441;
     color: white;
 }
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 18px;
+        padding: 10px 10px;
+    }
+
+    .services-listing {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .service img {
+        max-width: 100%;
+    }
+}

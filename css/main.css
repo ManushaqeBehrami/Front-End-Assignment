@@ -3,15 +3,20 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family: 'Montserrat', sans-serif;
+  --spacing: 16px;
+}
 
 .header {
   background-image: url('/images/bg.jpg'); /* Replace 'header_bg.jpg' with your image file */
   background-size :cover; /* Set the width of the background image */
   background-repeat: no-repeat;
   background-position: center center;
-  height: 300px; /* Adjust the height as needed */
+  min-height: 300px; /* Adjust the height as needed */
   text-align: center; /* Center the text */
-  padding: 50px;
 }
 
 /* About Section styling */
@@ -26,7 +31,7 @@ body {
 }
 .first,
 .slogan{
-     padding: 30px;
+     padding-top: 30px;
 }
 
 .about-text {
@@ -89,6 +94,17 @@ body {
 .product h3,
 .product p {
   margin: 0;
+}
+
+.product,.team-member {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product:hover,.team-member:hover {
+  transform: scale(1.05);
 }
 
 /* Team/Services Listing Section styling */
@@ -172,4 +188,123 @@ body {
 }
 #message{
   height: 100px;
+}
+@media (max-width: 768px) {
+  body {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+  }
+
+  .header {
+      min-height: 200px;
+      padding: 20px;
+      background-size: cover;
+      background-position: center;
+  }
+
+  .about, .products, .team-services, .contact {
+      padding: 20px;
+  }
+
+  .first, .slogan {
+      padding-top: 15px;
+  }
+
+  .about {
+      text-align: center;
+      margin: 10px auto;
+  }
+
+  .about-text, .about-links {
+      float: none;
+      width: 100%;
+      padding: 10px;
+  }
+
+  .about-text {
+      text-align: left;
+  }
+
+  .products {
+      text-align: center;
+  }
+
+  .product {
+      width: 80%;
+      margin: 10px 0;
+      padding: 15px;
+  }
+
+  .product img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .team-services {
+      text-align: center;
+      overflow: visible;
+  }
+
+  .team-member {
+      width: 80%;
+      margin: 10px 0;
+      padding: 15px;
+  }
+
+  .team-member img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .contact {
+      padding: 20px;
+      max-width: 90%;
+      margin: 10px auto;
+  }
+
+  .contact form {
+      width: 100%;
+  }
+
+  .contact form input, .contact form button, #message {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
+
+/* Define animation keyframes */
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Apply animation to headers */
+.animated-left {
+  animation: slideInFromLeft 3s ease-out infinite;
+  animation-delay: 0s; /* Start immediately */
+}
+
+.animated-right {
+  animation: slideInFromRight 3s ease-out infinite;
+  animation-delay: 3s; /* Delay for 3 seconds to create staggered effect */
 }

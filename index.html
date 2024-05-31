@@ -21,8 +21,12 @@
       <div class="navbar-left">
         <h1>Company Logo</h1>
       </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+        <!-- This represents the hamburger icon -->
+      </div>
       <ul class="navbar-right">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about.html">About Us</a></li>
         <li><a href="/allProducts.html">Products</a></li>
         <li><a href="/servicesListings.html">Services</a></li>
@@ -32,12 +36,11 @@
 
     <!-- Header Section -->
     <header class="header">
-      <h1 class="first">Welcome to our Website</h1>
-      <p class="slogan">
+      <h1 class="first animated-left">Welcome to our Website</h1>
+      <p class="slogan animated-right">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
     </header>
-
     <!-- Products Listing Section -->
     <section class="products">
       <h2 class="products-title">Our Products</h2>
@@ -146,5 +149,42 @@
         <a href="contact.html">Contact</a> | <a href="#">Privacy Policy</a>
       </p>
     </div>
+    <script>
+      // Check if there's any saved data in session storage when the page loads
+      window.addEventListener("DOMContentLoaded", function () {
+        const savedData = sessionStorage.getItem("formData");
+        if (savedData) {
+          const formData = JSON.parse(savedData);
+          console.log(
+            `Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+          );
+
+          // Optionally, clear the saved data from session storage
+          sessionStorage.removeItem("formData");
+        }
+      });
+
+      // Form submission handler remains the same as above
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+
+          // Save form data to session storage
+          sessionStorage.setItem(
+            "formData",
+            JSON.stringify({
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              message: document.getElementById("message").value,
+            })
+          );
+
+          // Refresh the page
+          location.reload();
+        });
+    </script>
+    <script src="/scripts/nav.js"></script>
+    <script src="/scripts/nav.js"></script>
   </body>
 </html>
