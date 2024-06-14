@@ -2,59 +2,83 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
+
 .container {
     margin: 0 auto;
-    padding: 20px;
 }
+
+.welcome-message {
+    background-color: #81b441;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
 .header {
     background-color: #18af91;
     color: white;
     padding: 10px 20px;
     text-align: center;
+    font-size: 15px;
 }
+
 .search-bar {
-    margin: 20px 0;
+    margin: 50px 0;
     display: flex;
     justify-content: center;
 }
+
 .search-bar input {
-    padding: 10px;
-    width: 80%;
-    max-width: 400px;
+    padding: 15px;
+    width: 100%;
+    max-width: 800px;
     border: 2px solid #81b441;
     border-radius: 5px;
 }
+
 .products-listing {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
+
 .product {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    width: calc(25% - 50px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(25% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     text-decoration: none;
     color: inherit;
+    display: block;
 }
+
 .product img {
     max-width: 100%;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
+    height: 150px;
+    object-fit: cover;
 }
+
 .product h3 {
     color: #81b441;
     font-size: 1.2em;
+    margin: 10px 0;
 }
+
 .pagination {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
+
 .pagination a {
     color: #81b441;
     padding: 10px 15px;
@@ -63,10 +87,58 @@ body {
     border: 1px solid #81b441;
     border-radius: 5px;
 }
+
 .pagination a.active {
     background-color: #81b441;
     color: white;
 }
+
+.load-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.load-more button {
+    padding: 10px 20px;
+    background-color: #81b441;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #18af91;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #81b441;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 10px;
@@ -77,17 +149,22 @@ body {
         padding: 10px 10px;
     }
 
-    .services-listing {
+    .products-listing {
         flex-direction: column;
         gap: 10px;
     }
 
-    .service {
+    .product {
         width: 100%;
         margin: 10px 0;
     }
 
-    .service img {
+    .product img {
         max-width: 100%;
+    }
+
+    .footer form {
+        width: 100%;
+        padding: 10px;
     }
 }

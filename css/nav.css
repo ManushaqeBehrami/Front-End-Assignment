@@ -1,8 +1,9 @@
 /* Navbar styling */
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif !important; 
+  font-family: "Montserrat", sans-serif !important;
 }
+
 .navbar {
   z-index: 10000;
   background-color: #149279;
@@ -15,6 +16,7 @@ body {
   font-size: 15px;
   position: relative;
 }
+
 .navbar h1 {
   margin: 0;
 }
@@ -25,17 +27,21 @@ body {
   padding: 0;
   display: flex;
 }
+
 .navbar-right li {
   margin-right: 20px;
 }
+
 .navbar-right li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .navbar-right li a:hover {
   color: #140e03;
 }
+
 .hamburger {
   display: none;
   font-size: 30px;
@@ -45,20 +51,22 @@ body {
 /* Hide desktop navbar on small screens */
 @media (max-width: 768px) {
   .navbar-right {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #149279;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      padding: 10px 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #149279;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 10px 0;
   }
+
   .navbar-right li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
+
   .hamburger {
-      display: block;
+    display: block;
   }
 }

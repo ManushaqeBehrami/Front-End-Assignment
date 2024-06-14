@@ -1,109 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form</title>
-    <link rel="stylesheet" type="text/css" href="./css/contact.css" />
-    <link rel="stylesheet" type="text/css" href="./css/nav.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <h1>Company Logo</h1>
-      </div>
-      <div class="hamburger" onclick="toggleMenu()">
-        &#9776;
-      </div>
-      <ul class="navbar-right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/allProducts.html">Products</a></li>
-        <li><a href="/servicesListings.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <span class="big-circle"></span>
-      <img src="/images/shape.png" class="square" alt="" />
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="./css/nav.css" />
 
-          <div class="info">
-            <div class="information">
-              <img src="/images/location.png" class="icon" alt="" />
-              <p>Prishtina</p>
-            </div>
-            <div class="information">
-              <img src="/images/email.png" class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
-            </div>
-            <div class="information">
-              <img src="/images/phone.png" class="icon" alt="" />
-              <p>123-456-789</p>
-            </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h1>Company Logo</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <ul class="navbar-right">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About Us</a></li>
+      <li><a href="/allProducts.html">Products</a></li>
+      <li><a href="/servicesListings.html">Services</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="/images/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="/images/location.png" class="icon" alt="" />
+            <p>Prishtina</p>
           </div>
-
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+          <div class="information">
+            <img src="/images/email.png" class="icon" alt="" />
+            <p>lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <img src="/images/phone.png" class="icon" alt="" />
+            <p>123-456-789</p>
           </div>
         </div>
 
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" placeholder="Username"/>
-            </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input"   placeholder="Email"/>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input"   placeholder="Phone"/>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input"  placeholder="Message"></textarea>
-            </div>
-            <input type="submit" value="Send" class="btn" />
-          </form>
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form id="contactForm" action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" placeholder="Username" required />
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" placeholder="Email" required />
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" placeholder="Phone" required />
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" placeholder="Message" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+          <span class="success" id="successMessage"></span>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script src="/scripts/app.js"></script>
-    <script src="/scripts/nav.js"></script>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/nav.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Clear previous error messages
+      document.getElementById('nameError').innerText = '';
+      document.getElementById('emailError').innerText = '';
+      document.getElementById('phoneError').innerText = '';
+      document.getElementById('messageError').innerText = '';
+      document.getElementById('successMessage').innerText = '';
+
+      // Validate form fields
+      let isValid = true;
+
+      const name = document.querySelector('input[name="name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      const message = document.querySelector('textarea[name="message"]').value;
+
+      if (name.trim() === '') {
+        document.getElementById('nameError').innerText = 'Name is required.';
+        isValid = false;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+        isValid = false;
+      }
+
+      if (phone.trim() === '') {
+        document.getElementById('phoneError').innerText = 'Phone number is required.';
+        isValid = false;
+      }
+
+      if (message.trim() === '') {
+        document.getElementById('messageError').innerText = 'Message is required.';
+        isValid = false;
+      }
+
+      if (isValid) {
+        // Log the form data to the console
+        console.log('Form Data:');
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Phone:', phone);
+        console.log('Message:', message);
+
+        // Display success message
+        document.getElementById('successMessage').innerText = 'Form submitted successfully!';
+        document.getElementById('contactForm').reset();
+      }
+    });
+  </script>
 </body>
+
 </html>
